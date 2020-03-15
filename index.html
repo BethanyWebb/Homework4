@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+  </head>
+
+  <body>
+    <h1>Javascript Quiz</h1>
+
+    <text>Time: <text id="timer">30</text></text><br />
+    <input id = "start" type = "button" value = "Start" onclick = "clock();">
+
+    <form id = "quiz" name = "quiz" class="hide">
+        <p>what is the best javascript command</p>
+        <input id = "textbox" type = "text" name = "question1">
+        
+        <p>How do you select an element from Html?</p>
+
+        <input type = "radio" id = "mc" name = "question2" value = "querySelector"> querySelector<br>
+        <input type = "radio" id = "mc" name = "question2" value = "function"> function<br>
+        
+        <p>What is a Boolean?</p>
+
+        <input type = "radio" id = "mc" name = "question3" value = "A prompt to enter a response"> A prompt to enter a response<br>
+        <input type = "radio" id = "mc" name = "question3" value = "A true or false statement"> A true or false statement<br>
+        <br></br>
+        <input id = "button" type = "button" value = "I'm finished" onclick = "check();">
+
+
+    </form>
+
+    <div id = "after_submit">
+    <p id = "number_correct"></p>
+    </div>
+
+    <div class="initials">
+      <form id="initials-form" method="POST">
+        <label for="initials-text">Add initials here:</label>
+        <input type="text" placeholder="Enter initials here" name="initials-text" id="initials-text" />
+      </form>
+      <p>Initials: <span id="initials-count">0</span></p>
+      <ul id="initials-list"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+
+  </html>
